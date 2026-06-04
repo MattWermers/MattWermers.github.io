@@ -14,6 +14,7 @@ I have always been eyes glazed over uninterested in front end development but co
 > I want to create a page that will eventually be a personal portfolio
 > - Easier deliverable: Link to my girlfriend's page. About Section
 > - Harder deliverable: Page sends HTTP request to hosted service (will help my test what I am doing at work) and displays something about the request.
+>   
 > **Learn how to make a ‘good website’**
 > I want to learn how to make a website that looks nice and feels good to use.
 > - Easier deliverable: Implement multiple sections and some kind of style. This would be typography, color, and a simple layout.
