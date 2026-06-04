@@ -53,3 +53,6 @@ I really know nothing about webpage development so these are quite general.
 ## Risks
 - Knowledge hole: When people start talking about webpage development my brain usually turns off. I know there is HTML, Json, CSS, whatever… but that's really it. I might be creating a scope too large to handle.
 - Busy brain: I just learned/am still learning C#, developing for Azure, docker, all kinds of tools for work. I am starting my software development class project and am not sure about my team's tech stack, I might have more to learn there. And now I am tackling webpage development
+
+## Mitigation Strategy
+The only standard way I can think of to deal with this is scope limitation. I want to leave this project quite open ended as I don’t know what I am getting into. I left my checkpoints and evaluation criteria pretty open ended for this reason. The only ‘hard goal’ I hope to achieve is ‘Having a hosted site that sends an HTTP request that I can process’. If I achieve this goal, I will polish the site, and add another portfolio entry
