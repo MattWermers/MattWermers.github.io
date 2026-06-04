@@ -32,14 +32,17 @@ I really know nothing about webpage development so these are quite general.
 > - Determine tech stack. Do I want to use a framework?
 > - Code basic structure of site 1.
 > - Implement initial sections and subpages.
+>   
 > Checkpoint 2: Set-up of page for girlfriend
 > - Repeat step 1 for site 2.
 > - Start writing code for site 2. Implement some kind of design. Parallax, sidebars, animations, etc… something
 > - Appearance is important, some kind of aesthetic set for the page.
+>   
 > Checkpoint 3: Return to site 1
 > - Add the newly created site 2 as the first portfolio entry in site 1. Then repeat step 2 for site 1.
 > - This seems like a simple checkpoint but I hope that by creating the two sites with different design choices I'll learn enough to make both more professional.
 > - Clean up alignment, broken links, bugs.
+>   
 > Checkpoint 4: Host the site, HTTP request
 > - **Add a button that will send an HTTP request I can process.**
 > - Host the site on a hosting service
