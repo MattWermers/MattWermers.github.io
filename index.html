@@ -14,19 +14,33 @@
         <p>C# & Azure developer expanding into frontend.</p>
     </header>
 
+    <!-- 
+      Layout Convention:
+      .bodywith-sidebar
+        .bar
+        .body
+            #interior
+    -->
     <main class="bodywith-sidebar">
 
-        <div class="sidebar-bar">
+        <div class="bar">
             <li><a href="#aboutme">About Me</a></li>
         </div>
 
-        <div class="sidebar-body">
+        <div class="body">
 
-            <div id="body-interior">
+            <div id="interior">
 
-                <section>
-                    <h2>About Me</h2>
-                    <p>I write backend logic for ETL pipelines integrating EMR data. I have also developed tools for automating batching, task scheduling, and data entry for laboratory workflows. Additionally, I developed backend ETL pipelines and PowerBI dashboards for reporting and trending laboratory quality data.</p>
+                <section class="badge-card">
+                    <div class="card-badge">
+                        <img class="circular-object" src="Data/smaller_me.png" alt="A photo of me on the boardwalk in NOLA.">
+                    </div>
+                    <div class="card-content">
+                        <h1 class="card-title"><strong>About Me</strong></h1>
+                        <div class="card-body">
+                            <p>I write backend logic for ETL pipelines integrating EMR data. I have also developed tools for automating batching, task scheduling, and data entry for laboratory workflows. Additionally, I developed backend ETL pipelines and PowerBI dashboards for reporting and trending laboratory quality data.</p>
+                        </div>
+                    </div>
                 </section>
 
                 <section>
