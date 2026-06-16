@@ -6,8 +6,6 @@
     <title>Matt Wermers Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-</head>
 
 <body>
 
@@ -16,21 +14,74 @@
         <p>C# & Azure developer expanding into frontend.</p>
     </header>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>I write backend logic for ETL pipelines integrating EMR data. I have also developed tools for automating batching, task scheduling, and data entry for laboratory workflows. Additionally, I developed backend ETL pipelines and PowerBI dashboards for reporting and trending laboratory quality data.</p>
-        </section>
+    <main class="bodywith-sidebar">
 
-        <section>
-            <h2>Tech Stack</h2>
-            <u1>
-                <li>C# / .NET</li>
-                <li>Azure</li>
-                <li>JSON</li>
-                <li>HTML & CSS</li>
-            </u1>
-        </section>
+        <div class="sidebar-bar">
+            <li><a href="#aboutme">About Me</a></li>
+        </div>
+
+        <div class="sidebar-body">
+
+            <div id="body-interior">
+
+                <section>
+                    <h2>About Me</h2>
+                    <p>I write backend logic for ETL pipelines integrating EMR data. I have also developed tools for automating batching, task scheduling, and data entry for laboratory workflows. Additionally, I developed backend ETL pipelines and PowerBI dashboards for reporting and trending laboratory quality data.</p>
+                </section>
+
+                <section>
+                    <div class="split">
+                        <div>
+                            <h2>Tech Stack</h2>
+                            <div class="split">
+                                <div>
+                                    <ul>
+                                        <li>C# / .NET</li>
+                                        <li>Azure</li>
+                                        <li>HTML & CSS</li>
+                                    </u1>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>SQL</li>
+                                        <li>C++</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>Skills</h2>
+                            <div class="split">
+                                <div>
+                                    <u1>
+                                        <li>ETL</li>
+                                        <li>HIPAA Compliant Workflows</li>
+                                    </u1>
+                                </div>
+                                <div>
+                                    <li>Azure Functions Isolated Worker Model</li>
+                                    <li>GIT</li>
+                                </div>
+                                <div>
+                                    <li>PowerBI</li>
+                                    <li>Process Development</li>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <section>
+                    <h2>Resume</h2>
+                    <object data="Data/WermersResMay26.pdf" type="application/pdf" width="100%" height="600px">
+                        <p>Browser does not support embedded PDFs you can <a href="Data/WermersResMay26.pdf" downloads="WermersResMay26.pdf" class="button">dowload it instead.</a></p>
+                </section>
+
+            </div>
+            
+        </div>
     </main>
 
     <footer>
@@ -38,4 +89,3 @@
     </footer>
 
 </body>
-</html>
