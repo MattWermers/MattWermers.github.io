@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="Styles/button-item.css">
     <link rel="stylesheet" href="Styles/flex-object-item.css">
     <link rel="stylesheet" href="Styles/bodywith-sidebar-item.css">
+    <link rel="stylesheet" href="Styles/navigation-item.css">
 
 
     <meta charset="UTF-8">
@@ -19,8 +20,49 @@
 
 <body>
 
+    <header id="site-header">
+        <div class="logo">
+            <h1 style="margin: 0; font-size: 1.5rem; color: var(--color-banner-text);">Matt Wermers</h1>
+        </div>
+        
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <!-- Dropdown 1: About Me -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About Me</a>
+                    <div class="dropdown-menu">
+                        <a href="#aboutme">Biography</a>
+                        <a href="#techstack">Tech Stack</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#experience">Experience</a>
+                    </div>
+                </li>
+                
+                <!-- Dropdown 2: Projects -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Projects</a>
+                    <div class="dropdown-menu">
+                        <a href="#">ETL Pipelines</a>
+                        <a href="#">Data Automation</a>
+                        <a href="#">Web Apps</a>
+                    </div>
+                </li>
+
+                <!-- Dropdown 3: Interests -->
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Interests</a>
+                    <div class="dropdown-menu">
+                        <a href="SoftwareDev.html">Software Dev</a>
+                        <a href="ComputerScience.html">Computer Science</a>
+                        <a href="Biology.html">Biology</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <section class="badge-card">
+        <section class="badge-card" id="aboutme">
             <div class="card-content">
                 <h1 class="card-title"><strong>About Me</strong></h1>
                 <div class="card-body">
@@ -28,14 +70,14 @@
                         <img src="Data/smaller_me.png" alt="A photo of me on the boardwalk in NOLA.">
                     </div>
                     <p>I am an early-career computer scientist specializing in data science, automation, and cloud-based data engineering. I am currently working in an independent position to deliver a scalable, HIPAA-compliant ETL pipeline for integrating multi-sourced and multi-formatted EMR data into a standardized schema using a script-driven command pattern enabled via polymorphic deserialization.<br><br>
-                        My skills in ETL, Data Analytics, and Workflow Automation were first developed through brute-force methods made necessary by the realities of laboratory operations. These skills are now backed by formal education, professional experience, and an ever-growing full-stack approach.<br><br>
-                        In addition to automating batching, correcting years' worth of historical test data, and automating database transactions from a LIMS, I can build dashboards that result in actionable insights, whether they report trended quality/business data or use data mining to identify trends in a sample cluster.<br><br>
-                        My diverse background working in labs across a variety of industries with an even larger variety of responsibilities fosters an intuitive understanding of the data in your lab's workflows. I have the skills necessary to modernize and streamline your lab processes, and I am looking to do just that.</p>
+                        My skills in ETL, Data Analytics, and Workflow Automation were first developed through brute-force methods made necessary by the realities of laboratory operations. These skills developed via intuition are now backed by formal education, professional experience, and an ever-growing full-stack approach.<br><br>
+                        In addition to automating batching, correcting years' worth of historical test data, and automating database transactions from LIMS, etc... I can build dashboards that result in actionable insights, whether they report trended quality/business data or use data mining to identify trends in a sample cluster. I can build a pipeline for transorming or utilizing your data and a front end for your technicians and analysts to interact with it.<br><br>
+                        While the titles at my previous roles might not reflect it. I found as someone hired for laboratory support the labs more often needed support accessing, understanding, or utilizing their data than they needed getting the actual tests done (when a test takes two hours, data entry takes 30 mins, and seeing the data in the database takes a few more hours this is an issue). My diverse background working in labs across a variety of industries with an even larger variety of responsibilities fosters an intuitive understanding of the data in your lab's workflows. I have the skills necessary to modernize and streamline your lab processes, and I am looking to do just that.</p>
                 </div>
             </div>
         </section>
 
-        <section class="content-card">
+        <section class="content-card" id="techstack">
             <div class="card-content">
                 <h1 class="card-title"><strong>Tech Stack & Tools</strong></h1>
                 <div class="card-body">
@@ -52,7 +94,7 @@
                 </div>
         </section>
 
-        <section class="content-card">
+        <section class="content-card" id="skills">
             <div class="card-content">
                 <h1 class="card-title"><strong>Skills</strong></h1>
                 <div class="card-body">
@@ -64,7 +106,7 @@
                 </div>
         </section>
         <!-- Experience Card Section -->
-        <section class="content-card">
+        <section class="content-card" id="experience">
             <div class="card-content">
                 <!-- Floating Section Header -->
                 <h1 class="card-title"><strong>Experience</strong></h1>
@@ -189,7 +231,7 @@
                 </div>
             </div>
         </section>
-        <section class="content-card">
+        <section class="content-card" id="resume">
             <div class="card-content">
                 <h1 class="card-title"><strong>Resume</strong></h1>
                 <div class="card-body">
@@ -204,6 +246,13 @@
     <footer>
         <p>&copy; 2026 Matt Wermers Portfolio</p>
     </footer>
+
+    <script>
+        // Forces browser to scroll to the top left on page load
+        window.addEventListener('load', () => {
+            window.scrollTo(0, 0);
+        });
+    </script>
 
 </body>
 </html>

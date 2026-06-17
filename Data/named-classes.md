@@ -63,6 +63,17 @@ The experience section is nested within a standard `.content-card` and styled dy
                     *   `.role-title` (Role title)
                     *   `.role-date` (Dates)
 
+#### `#site-header` & Navigation
+A site header component housing a logo and a navigation bar with discrete hover-dropdown boxes.
+*   **Structure:**
+    *   `#site-header` (Header flexbox wrapper container)
+        *   `.logo` (Brand logo/name area)
+        *   `.navbar` (Navigation bar list wrapper)
+            *   `.nav-menu` (Flex list container holding list items)
+                *   `.nav-item` (Bordered box wrapper utilizing `--color-interactable` color tokens)
+                    *   `.nav-link` (Main nav click target link)
+                    *   `.dropdown-menu` (Absolutely positioned drop container that opens on hover)
+
 ---
 
 ### **Interactables & Items**

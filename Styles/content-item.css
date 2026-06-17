@@ -6,6 +6,7 @@
     padding: 0.5rem;
     margin: 4rem 1rem 1rem 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    scroll-margin-top: 4.5rem; /* Stop scrolling early to keep floating title in view */
 }
 
 /* Clear vertical space for the absolute header overlapping the top border */
