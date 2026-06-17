@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang=""en">
+<html lang="en">
 <head>
+    <link rel="stylesheet" href="Styles/style-colors.css">
+    <link rel="stylesheet" href="Styles/style-body.css">
+    <link rel="stylesheet" href="Styles/badge-item.css">
+    <link rel="stylesheet" href="Styles/content-item.css">
+    <link rel="stylesheet" href="Styles/circular-object-item.css">
+    <link rel="stylesheet" href="Styles/button-item.css">
+    <link rel="stylesheet" href="Styles/flex-object-item.css">
+    <link rel="stylesheet" href="Styles/bodywith-sidebar-item.css">
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matt Wermers Portfolio</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
+    <header id="name-contact">
         <h1>Matt Wermers Portfolio</h1>
         <p>C# & Azure developer expanding into frontend.</p>
     </header>
@@ -32,65 +41,58 @@
             <div id="interior">
 
                 <section class="badge-card">
-                    <div class="card-badge">
-                        <img class="circular-object" src="Data/smaller_me.png" alt="A photo of me on the boardwalk in NOLA.">
-                    </div>
+                    
                     <div class="card-content">
                         <h1 class="card-title"><strong>About Me</strong></h1>
                         <div class="card-body">
-                            <p>I write backend logic for ETL pipelines integrating EMR data. I have also developed tools for automating batching, task scheduling, and data entry for laboratory workflows. Additionally, I developed backend ETL pipelines and PowerBI dashboards for reporting and trending laboratory quality data.</p>
+                            <div class="card-badge card-badge-float" style="--badge-size: 9rem;">
+                                <img src="Data/smaller_me.png" alt="A photo of me on the boardwalk in NOLA.">
+                            </div>
+                            <p>I am an early-career computer scientist specializing in data science, automation, and cloud-based data engineering. I am currently working in an independent position to deliver a scalable, HIPAA-compliant ETL pipeline for integrating multi-sourced and multi-formatted EMR data into a standardized schema using a script-driven command pattern enabled via polymorphic deserialization.<br><br>
+                                My skills in ETL, Data Analytics, and Workflow Automation were first developed through brute-force methods made necessary by the realities of laboratory operations. These skills are now backed by formal education, professional experience, and an ever-growing full-stack approach.<br><br>
+                                In addition to automating batching, correcting years' worth of historical test data, and automating database transactions from a LIMS, I can build dashboards that result in actionable insights—whether they report trended quality/business data or use data mining to identify trends in a sample cluster.<br><br>
+                                My diverse background working in labs across a variety of industries with an even larger variety of responsibilities fosters an intuitive understanding of the data in your lab's workflows. I have the skills necessary to modernize and streamline your lab processes, and I am looking to do just that.</p>
                         </div>
                     </div>
                 </section>
 
-                <section>
-                    <div class="split">
-                        <div>
-                            <h2>Tech Stack</h2>
-                            <div class="split">
-                                <div>
-                                    <ul>
-                                        <li>C# / .NET</li>
-                                        <li>Azure</li>
-                                        <li>HTML & CSS</li>
-                                    </u1>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li>Python</li>
-                                        <li>SQL</li>
-                                        <li>C++</li>
-                                    </ul>
-                                </div>
-                            </div>
+                <section class="content-card">
+                    <div class="card-content">
+                        <h1 class="card-title"><strong>Tech Stack & Tools</strong></h1>
+                        <div class="card-body">
+                            <ul class="flex-object" style="--item-width: 200px; --gap: 15px;">
+                                <li>C# / .NET</li>
+                                <li>Azure</li>
+                                <li>HTML & CSS</li>
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>PowerBi</li>
+                                <li>C++</li>
+                                <li>GIT</li>
+                            </ul>
                         </div>
-                        <div>
-                            <h2>Skills</h2>
-                            <div class="split">
-                                <div>
-                                    <u1>
-                                        <li>ETL</li>
-                                        <li>HIPAA Compliant Workflows</li>
-                                    </u1>
-                                </div>
-                                <div>
-                                    <li>Azure Functions Isolated Worker Model</li>
-                                    <li>GIT</li>
-                                </div>
-                                <div>
-                                    <li>PowerBI</li>
-                                    <li>Process Development</li>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </section>
 
-                <section>
-                    <h2>Resume</h2>
-                    <object data="Data/WermersResMay26.pdf" type="application/pdf" width="100%" height="600px">
-                        <p>Browser does not support embedded PDFs you can <a href="Data/WermersResMay26.pdf" downloads="WermersResMay26.pdf" class="button">dowload it instead.</a></p>
+                <section class="content-card">
+                    <div class="card-content">
+                        <h1 class="card-title"><strong>Skills</strong></h1>
+                        <div class="card-body">
+                            <ul class="flex-object" style="--item-width: 200px; --gap: 15px;">
+                                <li>Azure Functions (Isolated Worker Model)</li>
+                                <li>EDA & ETL</li>
+                                <li>Data Compliance</li>
+                            </ul>
+                        </div>
+                </section>
+
+                <section class="content-card">
+                    <div class="card-content">
+                        <h1 class="card-title"><strong>Resume</strong><h1>
+                        <div class="card-body">
+                            <object data="Data/WermersResMay26.pdf" type="application/pdf" width="100%" height="600px">
+                                <p>Your browser does not support embedded PDFs. You can <a href="Data/WermersResMay26.pdf" downloads="WermersResMay26.pdf" class="button">download it instead.</a></p>
+                        </div>
+                    </div>
                 </section>
 
             </div>
@@ -103,3 +105,4 @@
     </footer>
 
 </body>
+</html>
