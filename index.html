@@ -22,7 +22,11 @@
 
     <header id="site-header">
         <div class="logo">
-            <h1 style="margin: 0; font-size: 1.5rem; color: var(--color-banner-text);">Matt Wermers</h1>
+            <h1 class="logo-name">Matt Wermers</h1>
+            <span class="logo-divider">|</span>
+            <a href="tel:7203414962" class="logo-contact" title="Click to call this number using your default application">720-341-4962</a>
+            <span class="logo-divider">|</span>
+            <a href="mailto:matthew.wermers@gmail.com" class="logo-contact" title="Click to send an email using your default application">matthew.wermers@gmail.com</a>
         </div>
         
         <nav class="navbar">
@@ -34,6 +38,7 @@
                         <a href="#aboutme">Biography</a>
                         <a href="#techstack">Tech Stack</a>
                         <a href="#skills">Skills</a>
+                        <a href="#education">Education</a>
                         <a href="#experience">Experience</a>
                     </div>
                 </li>
@@ -69,10 +74,9 @@
                     <div class="card-badge card-badge-float" style="--badge-size: 9rem;">
                         <img src="Data/smaller_me.png" alt="A photo of me on the boardwalk in NOLA.">
                     </div>
-                    <p>I am an early-career computer scientist specializing in data science, automation, and cloud-based data engineering. I am currently working in an independent position to deliver a scalable, HIPAA-compliant ETL pipeline for integrating multi-sourced and multi-formatted EMR data into a standardized schema using a script-driven command pattern enabled via polymorphic deserialization.<br><br>
-                        My skills in ETL, Data Analytics, and Workflow Automation were first developed through brute-force methods made necessary by the realities of laboratory operations. These skills developed via intuition are now backed by formal education, professional experience, and an ever-growing full-stack approach.<br><br>
-                        In addition to automating batching, correcting years' worth of historical test data, and automating database transactions from LIMS, etc... I can build dashboards that result in actionable insights, whether they report trended quality/business data or use data mining to identify trends in a sample cluster. I can build a pipeline for transorming or utilizing your data and a front end for your technicians and analysts to interact with it.<br><br>
-                        While the titles at my previous roles might not reflect it. I found as someone hired for laboratory support the labs more often needed support accessing, understanding, or utilizing their data than they needed getting the actual tests done (when a test takes two hours, data entry takes 30 mins, and seeing the data in the database takes a few more hours this is an issue). My diverse background working in labs across a variety of industries with an even larger variety of responsibilities fosters an intuitive understanding of the data in your lab's workflows. I have the skills necessary to modernize and streamline your lab processes, and I am looking to do just that.</p>
+                    <p>I am an early-career computer scientist specializing in data science, automation, and cloud-based data engineering. I am currently working in an independent position to deliver a scalable, HIPAA-compliant ETL pipeline. This solution integrates multi-sourced and multi-formatted EMR data into a standardized database schema using a script-driven command pattern enabled via polymorphic deserialization under serverless Azure Functions.<br><br>
+                        My skills in ETL, data analytics, and workflow automation were first developed through brute-force methods made necessary by the realities of laboratory operations. Today, these self-taught foundations are backed by formal computer science education, professional experience, and an ever-growing full-stack approach.<br><br>
+                        In addition to automating database transactions from a LIMS and correcting years' worth of historical test data, I design analytical dashboards and build pipelines that extract actionable insights—whether reporting trended quality data or using data mining to identify trends in a sample cluster. My diverse background working in labs across a variety of industries fosters an intuitive understanding of lab data flows, allowing me to bridge the gap between scientific compliance and modern software engineering.</p>
                 </div>
             </div>
         </section>
@@ -81,16 +85,42 @@
             <div class="card-content">
                 <h1 class="card-title"><strong>Tech Stack & Tools</strong></h1>
                 <div class="card-body">
-                    <ul class="flex-object" style="--item-width: 200px; --gap: 15px;">
-                        <li>C# / .NET</li>
-                        <li>Azure</li>
-                        <li>HTML & CSS</li>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>PowerBi</li>
-                        <li>C++</li>
-                        <li>GIT</li>
-                    </ul>
+                    <div class="flex-object" style="--item-width: 180px; --gap: 25px;">
+                        <div>
+                            <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--color-subcontext-accentext); font-size: 1.1rem;">Languages</h3>
+                            <ul style="padding-left: 1.2rem; margin: 0; color: var(--color-content-text);">
+                                <li>C# / .NET</li>
+                                <li>SQL</li>
+                                <li>Python</li>
+                                <li>C++</li>
+                                <li>HTML & CSS</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--color-subcontext-accentext); font-size: 1.1rem;">Cloud & DevOps</h3>
+                            <ul style="padding-left: 1.2rem; margin: 0; color: var(--color-content-text);">
+                                <li>Azure Functions</li>
+                                <li>Azure SQL DB</li>
+                                <li>Git Version Control</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--color-subcontext-accentext); font-size: 1.1rem;">Data & Analytics</h3>
+                            <ul style="padding-left: 1.2rem; margin: 0; color: var(--color-content-text);">
+                                <li>ETL Pipelines</li>
+                                <li>Analytical Dashboards</li>
+                                <li>Pandas & NumPy</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 style="margin-top: 0; margin-bottom: 0.5rem; color: var(--color-subcontext-accentext); font-size: 1.1rem;">Compliance</h3>
+                            <ul style="padding-left: 1.2rem; margin: 0; color: var(--color-content-text);">
+                                <li>HIPAA Privacy</li>
+                                <li>CLIA/GMP Integrity</li>
+                                <li>Data Traceability</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
         </section>
 
@@ -98,13 +128,61 @@
             <div class="card-content">
                 <h1 class="card-title"><strong>Skills</strong></h1>
                 <div class="card-body">
-                    <ul class="flex-object" style="--item-width: 200px; --gap: 15px;">
+                    <ul class="flex-object" style="--item-width: 220px; --gap: 15px;">
                         <li>Azure Functions (Isolated Worker Model)</li>
-                        <li>EDA & ETL</li>
-                        <li>Data Compliance</li>
+                        <li>ETL & Polymorphic Mapping</li>
+                        <li>Database Relational Design</li>
+                        <li>Scientific Data Compliance</li>
                     </ul>
                 </div>
         </section>
+
+        <!-- Education Card Section -->
+        <section class="content-card" id="education">
+            <div class="card-content">
+                <h1 class="card-title"><strong>Education</strong></h1>
+                
+                <div class="card-body">
+                    
+                    <!-- University 1: University of Colorado -->
+                    <div class="company-block">
+                        <div class="company-header">
+                            <span class="company-name">University of Colorado</span>
+                            <span class="company-duration">Expected Dec 2026</span>
+                        </div>
+                        
+                        <div class="nested-timeline no-line">
+                            <div class="nested-role">
+                                <div class="role-header">
+                                    <span class="role-title">B.S. Applied Computer Science</span>
+                                </div>
+                                <ul>
+                                    <li><strong>Coursework:</strong> Discrete Structures, Data Structures, Algorithms, Database Systems, Data Science, Information Visualization, Discrete Mathematics, Linear Algebra, Computer Systems.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- University 2: Colorado State University -->
+                    <div class="company-block">
+                        <div class="company-header">
+                            <span class="company-name">Colorado State University</span>
+                            <span class="company-duration">Dec 2022</span>
+                        </div>
+                        
+                        <div class="nested-timeline no-line">
+                            <div class="nested-role">
+                                <div class="role-header">
+                                    <span class="role-title">B.S. Biochemistry (Minor: Molecular Biology)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <!-- Experience Card Section -->
         <section class="content-card" id="experience">
             <div class="card-content">
@@ -126,7 +204,7 @@
                                     <span class="role-date">Mar 2026 – Present</span>
                                 </div>
                                 <ul>
-                                    <li>Architecting and developing Azure-based ETL pipelines for the DentalWriterPlus project, utilizing an Isolated Worker model to migrate EMR data into Azure SQL databases.</li>
+                                    <li>Architecting and developing Azure-based ETL pipelines for the DentalWriterPlus project, utilizing an Isolated Worker model and polymorphic JSON schema mapping to migrate EMR data into Azure SQL databases.</li>
                                     <li>Implementing state management patterns and domain-driven design to ensure data integrity during complex ingestion cycles within medical and dental billing environments.</li>
                                     <li>Maintaining rigorous security standards and HIPAA compliance for cloud-based data systems and automated workflows.</li>
                                     <li>Managing technical version control and project structure via Git to support collaborative software development.</li>
@@ -148,7 +226,7 @@
                             <!-- Role A -->
                             <div class="nested-role">
                                 <div class="role-header">
-                                    <span class="role-title">Eurofins Testing | Sterility Technician I</span>
+                                    <span class="role-title">Eurofins Testing | Sterility Technician 1</span>
                                     <span class="role-date">Apr 2025 – Sep 2025</span>
                                 </div>
                                 <ul>
@@ -161,7 +239,7 @@
                             <!-- Role B -->
                             <div class="nested-role">
                                 <div class="role-header">
-                                    <span class="role-title">Newmont Mining | Analytical Chemistry & Data Support</span>
+                                    <span class="role-title">Newmont Mining | Analytical Chemistry Technician 1</span>
                                     <span class="role-date">Jun 2024 – Apr 2025</span>
                                 </div>
                                 <ul>
@@ -197,7 +275,7 @@
                             <!-- Role B -->
                             <div class="nested-role">
                                 <div class="role-header">
-                                    <span class="role-title">Quality Control Laboratory Tech I</span>
+                                    <span class="role-title">Quality Control Laboratory Tech 1</span>
                                     <span class="role-date">Jun 2022 – Feb 2023</span>
                                 </div>
                                 <ul>

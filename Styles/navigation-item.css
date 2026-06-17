@@ -8,6 +8,40 @@
     border-bottom: 2px solid var(--color-subcontent);
 }
 
+/* Header logo and contact details container */
+#site-header .logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Wraps cleanly on mobile devices */
+    gap: 0.75rem;    /* Spacing between text and dividers */
+}
+
+#site-header .logo-name {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--color-banner-text);
+    font-weight: bold;
+}
+
+/* Faded divider lines to keep the design clean and uncluttered */
+#site-header .logo-divider {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.45); 
+}
+
+/* Secondary font size and color for the contacts to create hierarchy */
+#site-header a.logo-contact {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.85); /* Premium, high-contrast off-white */
+    font-weight: normal;
+    text-decoration: underline;        /* Keep links underlined by default */
+    transition: opacity 0.2s ease;
+}
+
+#site-header a.logo-contact:hover {
+    opacity: 0.7;                     /* Subtle hover feedback without changing the color */
+}
+
 /* Horizontal list layout */
 .navbar .nav-menu {
     display: flex;
