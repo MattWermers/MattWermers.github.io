@@ -20,6 +20,6 @@ section {
 footer {
     text-align: center;
     padding: 1rem;
-    color: var(--color-text-light);
+    color: var(--color-banner-text);
     font-size: 0.9rem;
 }

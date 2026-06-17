@@ -48,6 +48,21 @@ A standard content card component styled similarly to the `.badge-card`, but des
             *   `.card-title` (Absolutely positioned on top border, aligned to the left at `left: 2rem`)
             *   `.card-body` (Main text region)
 
+#### `.nested-timeline` & Company Grouping Structure
+The experience section is nested within a standard `.content-card` and styled dynamically using color tokens.
+
+*   **Structure:**
+    *   `.company-block` (Container block for each company in the history list)
+        *   `.company-header` (Flexbox header containing company name and total duration, with a bottom dividing line)
+            *   `.company-name` (Company title using sky-blue accent color)
+            *   `.company-duration` (Muted secondary duration text)
+        *   `.nested-timeline` (Wrapper container that holds nested roles. By default, draws a vertical connecting timeline line down the left side for companies with multiple roles/promotions)
+            *   `.no-line` (Modifier class: Hides the vertical connection line while preserving layout alignment for single-role entries)
+            *   `.nested-role` (Represents a role inside the timeline; uses `::before` pseudo-element to render a circular bullet dot centered on the vertical line alignment)
+                *   `.role-header` (Flexbox row with title and dates)
+                    *   `.role-title` (Role title)
+                    *   `.role-date` (Dates)
+
 ---
 
 ### **Interactables & Items**
