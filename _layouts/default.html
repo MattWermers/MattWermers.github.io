@@ -25,6 +25,42 @@
 
 </body>
 <footer>
-    <p>&copy; 2026 Matt Wermers Portfolio</p>
+    <p>&copy; 2026 Matt Wermers Portfolio | <span class="views-label">Views:</span><strong id="view-count">...</strong></p>
 </footer>
+
+<!-- Disclaimer this part was written by AI. I do not know how it works and it currently serves to test the backend
+    I plan to learn more about it later -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // 1. Get the current page title from Jekyll and format it for the database key
+        // e.g. "Matt Wermers Portfolio" becomes "matt-wermers-portfolio"
+        const pageKey = "{{ page.title | slugify | default: 'home' }}";
+        
+        // 2. Define your Azure Function API URL (replace with your actual URL)
+        const functionUrl = `https://visit-count-cufkfpc9fafuhwe0.westus2-01.azurewebsites.net/api/GetVisitorCount=${pageKey}`;
+        
+        // 3. Fetch the count from your backend
+        fetch(functionUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("Failed to retrieve visitor count.");
+                }
+                return response.json();
+            })
+            .then(data => {
+                // Update the counter on the screen
+                const countElement = document.getElementById("visitor-count");
+                if (countElement) {
+                    countElement.innerText = data.views;
+                }
+            })
+            .catch(err => {
+                console.error("Visitor count error:", err);
+                const countElement = document.getElementById("visitor-count");
+                if (countElement) {
+                    countElement.innerText = "N/A"; // fallback display
+                }
+            });
+    });
+</script>
 </html>
