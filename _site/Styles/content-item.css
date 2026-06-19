@@ -62,3 +62,19 @@ Usage
     margin-top: 0.5rem;
     color: var(--i-color-content-text, var(--color-content-text));
 }
+
+/*This makes it so that if a section a content card is a link, it will not be underlined */
+.block-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+/* Makes the content card raise a bit when hovered */
+.block-link:hover .content-card{
+    transform: translateY(-0.25rem);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.content-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
