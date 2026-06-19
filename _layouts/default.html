@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/Styles/style-colors.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/Styles/style-body.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/Styles/badge-item.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/Styles/content-item.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/Styles/experience-item.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/Styles/button-item.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/Styles/flex-object-item.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/Styles/bodywith-sidebar-item.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/Styles/navigation-item.css">
+</head>
+<body>
+
+    <!-- Inject the shared header component -->
+    {% include header.html %}
+
+    <!-- Target page content loads here -->
+    {{ content }}
+
+</body>
+<footer>
+    <p>&copy; 2026 Matt Wermers Portfolio</p>
+</footer>
+<script>
+    // Forces browser to scroll to the top left on page load
+    window.addEventListener('load', () => {
+        window.scrollTo(0, 0);
+    });
+</script>
+</html>

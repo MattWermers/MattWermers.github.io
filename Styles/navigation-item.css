@@ -1,4 +1,41 @@
-/* Component: Navigation Header */
+/*
+Component: Navigation Header
+
+Usage
+    IDs
+        #site-header      : Main page banner header container (flexbox layout)
+        
+    Classes
+        .logo             : Flex container for branding text and contact info
+        .logo-name        : Site title / owner name text
+        .logo-divider     : Vertical divider character wrapper
+        .logo-contact     : Email, phone, or external profile link anchors
+        .navbar           : Main navigation container
+        .nav-menu         : List container for main menu item buttons
+        .nav-item         : Sub-container for a main menu button, acts as anchor for hover dropdowns
+        .nav-link         : The clickable label inside a menu button
+        .dropdown-menu    : Container for dropdown link options (toggled on hover)
+        
+    Example:
+        <header id="site-header">
+            <div class="logo">
+                <h1 class="logo-name">John Doe</h1>
+                <span class="logo-divider">|</span>
+                <a href="mailto:john@example.com" class="logo-contact">john@example.com</a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Section Name</a>
+                        <div class="dropdown-menu">
+                            <a href="#anchor1">Subsection 1</a>
+                            <a href="#anchor2">Subsection 2</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+*/
 #site-header {
     background-color: var(--color-banner);
     padding: 1rem 2rem;
@@ -36,6 +73,11 @@
     font-weight: normal;
     text-decoration: underline;        /* Keep links underlined by default */
     transition: opacity 0.2s ease;
+}
+
+#site-header .logo-description {
+    font-size: 1.25rem;
+    color: var(--color-banner-text);
 }
 
 #site-header a.logo-contact:hover {

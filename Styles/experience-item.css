@@ -1,4 +1,61 @@
-/* 1. Spacing and card styling for each company block */
+/*
+Component: Experience Timeline
+
+Usage
+    Classes
+        .company-block     : Spacing and card container for each company section
+        .company-header    : Flexbox container for company name and duration
+        .company-name      : Accent-colored company name heading
+        .company-duration  : Muted date range for the overall company employment
+        .single-role-body  : Simple single role body wrapper (adds indentation)
+        .role-header       : Flexbox container for job title and specific date range
+        .role-title        : Job title heading
+        .role-date         : Job title specific date range
+        .nested-timeline   : Relative container linking multiple promoted roles
+        .nested-role       : Individual role within a multi-role nested timeline (draws connection dots and lines)
+        
+    Modifiers
+        .nested-timeline.no-line : Hides connection lines between roles but keeps layout spacing intact
+        
+    Example (Single Role):
+        <div class="company-block">
+            <div class="company-header">
+                <span class="company-name">Company Name</span>
+                <span class="company-duration">2020 - Present</span>
+            </div>
+            <div class="single-role-body">
+                <div class="role-header">
+                    <span class="role-title">Software Developer</span>
+                    <span class="role-date">2020 - Present</span>
+                </div>
+                <!-- Role details / bullet points -->
+            </div>
+        </div>
+
+    Example (Multiple Promoted Roles / Timeline):
+        <div class="company-block">
+            <div class="company-header">
+                <span class="company-name">Company Name</span>
+                <span class="company-duration">2018 - 2022</span>
+            </div>
+            <div class="nested-timeline">
+                <div class="nested-role">
+                    <div class="role-header">
+                        <span class="role-title">Senior Developer</span>
+                        <span class="role-date">2020 - 2022</span>
+                    </div>
+                    <!-- Role details -->
+                </div>
+                <div class="nested-role">
+                    <div class="role-header">
+                        <span class="role-title">Junior Developer</span>
+                        <span class="role-date">2018 - 2020</span>
+                    </div>
+                    <!-- Role details -->
+                </div>
+            </div>
+        </div>
+*/
 .company-block {
     background-color: var(--color-subcontent); /* Slate-blue subcontent box */
     border-radius: 0.5rem;                     /* Rounded corners */

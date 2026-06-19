@@ -1,15 +1,18 @@
 /*
-Class for a simple button
+Component: Button
 
 Usage
     Params
         --btn-bg        : Default background color
-        --btn-bg-hvr     : Background on hover
-        --btn-t          : Default text
-        --btn-t-hvr      : Text on hover
+        --btn-bg-hvr    : Background on hover
+        --btn-t         : Default text color
+        --btn-t-hvr     : Text color on hover
     
-    You can set the colors and link with
-        <a href="#[destination]" class="button" style="[variable-name]: #[hex-color]; [variable-name]: #[hex-color];">[Button text]</a>
+    Classes
+        .button         : Style for a simple button
+        
+    Example:
+        <a href="#destination" class="button" style="--btn-bg: #ff0000; --btn-t: #ffffff;">Button Text</a>
 */
 
 .button {
