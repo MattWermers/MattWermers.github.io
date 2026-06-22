@@ -26,7 +26,7 @@
         <span class="logo-divider">|</span>
         <a href="mailto:matthew.wermers@gmail.com" class="logo-contact" title="Click to send an email using your default application">matthew.wermers@gmail.com</a>
         <span class="logo-divider">|</span>
-        <a href="https://www.linkedin.com/in/matthew-wermers/" class="logo-contact" title="View my LinkedIn profile">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/mattwermers/" class="logo-contact" title="View my LinkedIn profile">LinkedIn</a>
         <span class="logo-divider">|</span>
         <a href="https://github.com/MattWermers/" class="logo-contact" title="View the source code for this website and my other projects on GitHub">GitHub</a>
     </div>
@@ -92,10 +92,11 @@
         // 1. Get the current page title from Jekyll and format it for the database key
         // e.g. "Matt Wermers Portfolio" becomes "matt-wermers-portfolio"
         const pageKey = "matt-wermers-projects-emr";
-        
-        // 2. Define your Azure Function API URL (replace with your actual URL)
-        const functionUrl = `https://wermerswebstorage.table.core.windows.net/VisitorCounter?page=Portfolio&key=${pageKey}`;
-        
+
+        // 2. Load the Azure Function URL from the Jekyll data file (azure.yml)
+        const baseUrl = "https://visit-count-cufkfpc9fafuhwe0.westus2-01.azurewebsites.net/api/GetVisitorCount?slug=";
+        const functionUrl = `${baseUrl}${pageKey}`;
+
         // 3. Fetch the count from your backend
         fetch(functionUrl)
             .then(response => {
@@ -105,15 +106,15 @@
                 return response.json();
             })
             .then(data => {
-                // Update the counter on the screen
-                const countElement = document.getElementById("visitor-count");
+                // Update the counter on the screen (element id is view-count)
+                const countElement = document.getElementById("view-count");
                 if (countElement) {
                     countElement.innerText = data.views;
                 }
             })
             .catch(err => {
                 console.error("Visitor count error:", err);
-                const countElement = document.getElementById("visitor-count");
+                const countElement = document.getElementById("view-count");
                 if (countElement) {
                     countElement.innerText = "N/A"; // fallback display
                 }
